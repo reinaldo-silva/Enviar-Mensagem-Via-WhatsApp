@@ -1,0 +1,94 @@
+.modalMensagem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  display: flex;
+  transform: translateX(-100%) ;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modalMensagemShow{
+  transform: translateX(0%) ;
+}
+
+.modalMensagem section{
+  height: auto;
+  width: 500px;
+  display: flex;
+  background: #FFF;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.4;
+  border-radius: 8px;
+  box-shadow: 0px 1px 5px 1px rgba(1, 1, 1, 0.3);
+}
+
+.modalMensagem section header {
+  background: #D1D2D4;
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px 8px 0px 0px;
+
+}
+
+.modalMensagem section h1{
+  margin: 10px;
+}
+
+.modalMensagem section textarea{
+  width: 90%;
+  height: auto;
+  margin: 30px 10px 10px;
+}
+
+.modalMensagem section #btnSalvar{
+margin: 20px;
+}
+
+.modalMensagem section div{
+  display: inline;
+  width: 90%;
+}
+
+#editar{
+  cursor: pointer;
+}
+
+#editar:hover{
+  color: rgb(96, 110, 236);
+  transition: 0.2s;
+  text-decoration: underline;
+}
+
+#nomeText{
+  opacity: 0;
+  position: absolute;
+  transform: translateY(-1000%);
+}
+
+#produtoText{
+  opacity: 0;
+  position: absolute;
+  transform: translateY(-1000%);
+}
+
+#produtoCopy, #nomeCopy{
+  height: auto;
+  margin: 10px;
+  padding: 1px 10px;
+  z-index: 1000;
+  text-align: center;
+}
+
+#copy{
+  transition: 0.3s;
+  opacity: 0;
+}

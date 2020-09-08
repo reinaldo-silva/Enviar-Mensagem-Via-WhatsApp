@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Enviar Mensagem </title>
+
+
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous">
+
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<!-- Formulario para envio -->
+	<body>
+		<div class="row">
+			<div class="card-body">
+				<br>
+				<a id="editar">Editar mensagem</a>
+			</div>
+		</div>
+		<br />
+
+		<!-- Grid -->
+		<div class="row">
+			<div class="card-body">
+				<table class="table">
+					<thead class="thead-light">
+						<tr>
+							<th>Nome</th>
+							<th>Telefone</th>
+							<th>Produto</th>
+							<th> - </th>
+						</tr>
+					</thead>
+					<tr>
+						<td>João</td>
+						<td>17991381882</td>
+						<td>Produto01</td>
+						<td><button type="button" class="btn btn-success">Enviar</button></td>
+					</tr>
+					<tr>
+						<td>Maria</td>
+						<td>179111654</td>
+						<td>Produto02</td>
+						<td><button type="button" class="btn btn-success">Enviar</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="modalMensagem" id="modalMensagem">
+			<section>
+				<header><h1>Prévia da mensagem</h1></header>
+
+				<textarea name="previa" id="previa" cols="30" rows="6"></textarea>
+
+				<div>
+					<input type="text" id="nomeText" value="[nome]" />
+					<button class="btn btn-info" id="nomeCopy">[nome]</button>
+
+					<input type="text" value="[produto]" id="produtoText" />
+					<button class="btn btn-info" id="produtoCopy">[produto]</button>
+
+					<span id="copy">Copy!</span>
+
+				</div>
+
+				<button type="button" class="btn btn-success" id="btnSalvar">Salvar
+					alterações</button>
+			</section>
+		</div>
+		<!-- script js -->
+		<script src="enviar.js"></script>
+	</body>
+</html>
